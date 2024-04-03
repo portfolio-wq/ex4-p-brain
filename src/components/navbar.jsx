@@ -5,6 +5,14 @@ import Link from "next/link";
 import { useState } from "react";
 import NavLink from "./navLink";
 import { motion } from "framer-motion";
+import {
+  FaDribbble,
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaPinterest,
+} from "react-icons/fa";
 
 const links = [
   { url: "/", title: "Home" },
@@ -91,22 +99,22 @@ const Navbar = () => {
       {/* SOCIAL */}
       <div className="hidden md:flex gap-4 w-1/3">
         <Link href="/">
-          <Image src="/github.png" alt="" width={24} height={24} />
+          <FaGithub />
         </Link>
         <Link href="/">
-          <Image src="/dribbble.png" alt="" width={24} height={24} />
+          <FaDribbble />
         </Link>
         <Link href="/">
-          <Image src="/instagram.png" alt="" width={24} height={24} />
+          <FaInstagram />
         </Link>
         <Link href="/">
-          <Image src="/facebook.png" alt="" width={24} height={24} />
+          <FaFacebook />
         </Link>
         <Link href="/">
-          <Image src="/pinterest.png" alt="" width={24} height={24} />
+          <FaPinterest />
         </Link>
         <Link href="/">
-          <Image src="/linkedin.png" alt="" width={24} height={24} />
+          <FaLinkedin />
         </Link>
       </div>
       {/* RESPONSIVE MENU */}
